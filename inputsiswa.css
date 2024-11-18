@@ -1,0 +1,130 @@
+/* Gaya Umum untuk Body */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    animation: slide-up 0.7s ease-out;
+}
+
+/* Animasi slide-up */
+@keyframes slide-up {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Label */
+label {
+    font-weight: bold; /* Lebih bold untuk formalitas */
+    color: #555;
+}
+
+/* Input Form */
+.form-control {
+    border: 2px solid #eee;
+    padding: 1px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    font-weight: bold; /* Sedikit lebih bold */
+    transition: all 0.3s ease;
+}
+
+/* Input Animasi saat focus */
+.form-control:focus {
+    border-color: #00f2fe;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 242, 254, 0.25);
+}
+
+/* Style untuk input */
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Tombol Simpan */
+.btn-primary {
+    background: linear-gradient(to right, #74ebd5, #04ef10);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold; /* Lebih bold pada tombol */
+    text-transform: uppercase;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover untuk tombol simpan */
+.btn-primary:hover {
+    background: linear-gradient(to right, #74ebd5, #04ef10);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Tombol Lihat Hasil */
+.btn-success {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 800; /* Lebih bold pada tombol */
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover untuk tombol lihat hasil */
+.btn-success:hover {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Menambahkan ruang antar elemen */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+}
